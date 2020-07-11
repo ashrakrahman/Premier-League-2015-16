@@ -203,7 +203,6 @@ class OperatorList extends React.Component<
           empty: true,
           customBodyRenderLite: (dataIndex: any, rowIndex: any) => {
             return (
-              // eslint-disable-next-line
               <div>
                 <Button
                   outline
@@ -213,7 +212,9 @@ class OperatorList extends React.Component<
                 >
                   {teamList[rowIndex].team1}
                 </Button>{" "}
-                vs{" "}
+                <Button color="secondary" size="sm">
+                  vs
+                </Button>{" "}
                 <Button
                   outline
                   size="sm"
