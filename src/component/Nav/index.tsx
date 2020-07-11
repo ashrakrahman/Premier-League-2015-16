@@ -1,6 +1,6 @@
 import React from "react";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from "reactstrap";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import OperatorList from "../OperatorList";
 
 interface NavProps {}
@@ -35,7 +35,7 @@ class NavBar extends React.Component<NavProps, NavBarState> {
           className="justify-content-between"
           expand="md"
         >
-          <NavbarBrand href="/premier-league-test">
+          <NavbarBrand href="/premier-league-test/#/">
             Premier League 2015-16
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -45,7 +45,7 @@ class NavBar extends React.Component<NavProps, NavBarState> {
         </Navbar>
         <Switch>
           {/* Forward Public Routes to the Home Page */}
-          <Route exact path="/premier-league-test" component={OperatorList} />
+          <Route exact path="/" component={OperatorList} />
         </Switch>
       </Router>
     );

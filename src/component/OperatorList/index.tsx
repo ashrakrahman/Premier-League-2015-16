@@ -206,7 +206,7 @@ class OperatorList extends React.Component<
               // eslint-disable-next-line
               <div>
                 <a
-                  href="#"
+                  href="#/"
                   id={rowIndex + "_" + teamList[rowIndex].teamKey1}
                   onClick={this.handleTeamInfo}
                 >
@@ -214,7 +214,7 @@ class OperatorList extends React.Component<
                 </a>{" "}
                 vs{" "}
                 <a
-                  href="#"
+                  href="#/"
                   id={rowIndex + "_" + teamList[rowIndex].teamKey2}
                   onClick={this.handleTeamInfo}
                 >
