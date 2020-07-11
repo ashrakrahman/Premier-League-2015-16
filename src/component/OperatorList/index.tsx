@@ -207,10 +207,10 @@ class OperatorList extends React.Component<
                 <Button
                   outline
                   size="sm"
-                  id={rowIndex + "_" + teamList[rowIndex].teamKey1}
+                  id={dataIndex + "_" + teamList[dataIndex].teamKey1}
                   onClick={this.handleTeamInfo}
                 >
-                  {teamList[rowIndex].team1}
+                  {teamList[dataIndex].team1}
                 </Button>{" "}
                 <Button color="secondary" size="sm">
                   vs
@@ -218,10 +218,10 @@ class OperatorList extends React.Component<
                 <Button
                   outline
                   size="sm"
-                  id={rowIndex + "_" + teamList[rowIndex].teamKey2}
+                  id={dataIndex + "_" + teamList[dataIndex].teamKey2}
                   onClick={this.handleTeamInfo}
                 >
-                  {teamList[rowIndex].team2}
+                  {teamList[dataIndex].team2}
                 </Button>
               </div>
             );
@@ -243,7 +243,7 @@ class OperatorList extends React.Component<
       seletedTeamInfo = teamInfoList[index];
     }
 
-    //console.log(seletedTeamInfo);
+    console.log(matchList);
 
     return (
       <Row style={{ marginBottom: "150px" }}>
