@@ -243,8 +243,6 @@ class OperatorList extends React.Component<
       seletedTeamInfo = teamInfoList[index];
     }
 
-    console.log(matchList);
-
     return (
       <Row style={{ marginBottom: "150px" }}>
         <Col sm={{ size: 8, order: 2, offset: 2 }}>
